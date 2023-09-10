@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: theme.shape.borderRadius,
       marginLeft: theme.spacing(2),
       marginRight: theme.spacing(2),
-      backgroundColor: alpha(theme.palette.primary.light, 0.35),
+      backgroundColor: alpha(theme.palette.secondary.light, 0.35),
       transition: "0.3s all ease-in-out",
       "&:hover": {
          backgroundColor: alpha(theme.palette.primary.light, 0.55),
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: "center",
    },
    inputRoot: {
-      color: "inherit",
+      color: "secondary",
    },
    inputInput: {
       padding: theme.spacing(1, 1, 1, 0),
@@ -68,7 +68,7 @@ const Input = () => {
                <SearchIcon />
             </div>
             <InputBase
-               placeholder="Find Item"
+               placeholder="Let's Shop"
                classes={{
                   root: classes.inputRoot,
                   input: classes.inputInput,

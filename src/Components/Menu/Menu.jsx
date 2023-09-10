@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
          top: 64,
       },
       left: 0,
-      backgroundColor: theme.palette.primary.light,
+      backgroundColor: theme.palette.secondary.light,
       display: "flex",
       height: "100vh",
       [theme.breakpoints.up("md")]: {

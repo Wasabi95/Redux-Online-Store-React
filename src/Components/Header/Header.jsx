@@ -127,7 +127,7 @@ const Header = () => {
 
    return (
       <>
-         <AppBar position="static" color="primary">
+         <AppBar position="static" color="primary" >
             <Toolbar className={classes.root} id="back-to-top-anchor">
                {isMenuOpen ? (
                   <IconButton
@@ -137,7 +137,7 @@ const Header = () => {
                         classes.transition,
                         classes.menuButton
                      )}
-                     color="inherit"
+                     color="primary"
                   >
                      <CloseIcon className={classes.whiteText} />
                   </IconButton>
@@ -148,29 +148,30 @@ const Header = () => {
                         classes.transition,
                         classes.menuButton
                      )}
-                     color="inherit"
+                     color="primary"
                      onClick={() => dispatch(openMenu())}
                   >
                      <MenuIcon />
                   </IconButton>
                )}
 
-               <Typography
-                  className={classNames(
-                     classes.logo,
-                     classes.letterSpace,
-                     classes.link
-                  )}
-                  variant="h4"
-                  component="h1"
-                  translate="no"
-                  onClick={() => {
-                     dispatch(closeMenu());
-                     navigate("/");
-                  }}
-               >
-                  Wasabi ONLINE
-               </Typography>
+<Typography
+   className={classNames(
+      classes.logo,
+      classes.letterSpace,
+      classes.link
+   )}
+   variant="h4"
+   component="h1"
+   translate="no"
+   onClick={() => {
+      dispatch(closeMenu());
+      navigate("/");
+   }}
+   style={{ color: "white" }} // Add this line to set the text color to black
+>
+   Wasabi ONLINE
+</Typography>
 
                <Grid
                   container
@@ -214,7 +215,7 @@ const Header = () => {
                         }}
                         className={classes.marginRightFour}
                      >
-                        <Badge badgeContent={cartLength} color="secondary">
+                        <Badge badgeContent={cartLength} color="primary">
                            <ShoppingCartIcon />
                         </Badge>
                         <Typography

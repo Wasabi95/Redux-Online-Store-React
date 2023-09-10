@@ -8,7 +8,7 @@ import {
    withStyles,
 } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
-import img from "../../assets/background.jpg";
+import img from "../../assets/backgroundx.avif";
 const useStyles = makeStyles((theme) => ({
    container: {
       minHeight: "calc(100vh - 56px)",
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
       color: "#fff",
       justifyContent: "center",
       background: `${alpha(theme.palette.grey[900], 0.9)} url(${img})`,
-      backgroundBlendMode: "overlay",
+      
       alignItems: "center",
    },
    whiteText: {
@@ -88,7 +88,7 @@ const Hero = () => {
                color="initial"
                className={classes.scriptText}
             >
-               The Best Products
+               Get the Trendy Stuffs
             </Typography>
             <Typography
                variant="h1"
@@ -96,7 +96,7 @@ const Hero = () => {
                color="initial"
                className={classes.bigText}
             >
-               Be Unique and Stylish
+               We got the best
             </Typography>
             <WhiteButton
                variant="outlined"
